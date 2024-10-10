@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <main id="main">
+        <form action="" name="formcontainer" class="formulario-container" id="formcontainer">
+            <h1 id="titulo">Calculadora IMC</h1>
+            
+            <label for="nome" class="label-container"> Nome
+                <input type="text" class="input" id="nome" required placeholder="Ex: Keven">
+            </label>
+
+            <label for="idade" class="label-container"> Idade
+                <input type="number" class="input" id="idade" required placeholder="Ex: 20">
+            </label>
+
+            <label for="peso" class="label-container"> Peso
+                <input type="number" class="input" id="peso" step="0.01" min="0.01" required placeholder="Ex: 70.50">
+            </label>
+
+            <label for="altura" class="label-container"> Altura
+                <input type="number" class="input" id="altura" name="fheight" step="0.01" min="0.01" required placeholder="Ex: 1,70">
+            </label>
+
+            <div class="button-container">
+                <button type="submit" class="btimc" id="btimc">Calcular</button>
+                <button type="reset" class="btlimpar" id="btclear">Limpar</button>
+            </div>
+
+            <!-- <span class="imc-container">
+                <label for="imc-valor">
+                    <h3 class="imc-title">IMC</h3>
+                    <h4 class="imc-valor" id="imcvalor">0,0</h4>
+                </label>
+                <label for="imcstatus" class="imc-type-container">
+                    <h3 class="imc-title">Grau</h3> 
+                    <p class="imc-status" id="imcstatus">--</p>
+                </label>
+            </span> -->
+            
+            
+            <hr>
+            <div class="print-dados">
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Peso</th>
+                        <th>Altura</th>
+                        <th>Imc</th>
+                        <th>Grau</th>
+                    </tr>
+                    <tr>
+                        <td id="tbname">-</td>
+                        <td id="tbage">-</td>
+                        <td id="tbweight">-</td>
+                        <td id="tbheight">-</td>
+                        <td id="tbimc">-</td>
+                        <td id="tbtype">-</td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </main>
+</body>
+<script src="/_desafios/calculadora-imc/calcularImc.js"></script>
+</html>

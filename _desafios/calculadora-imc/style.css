@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input {
+    padding: .5rem;
+}
+
+.formulario-container {
+    flex-direction: column;
+    display: flex;
+    width: 600px;
+    height: 600px;
+    border: solid 1px;
+    padding: 2.5rem;
+    justify-content: space-around;
+
+}
+
+.label-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.imc-container {
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.imc-valor {
+    display: flex;
+    flex-direction: column;
+}
+
+.imc-title {
+    margin-bottom: 1rem;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 0.5rem;
+    margin-inline: 0.5rem;
+}
+
+.print-dados{
+    display: flex;
+    justify-content: center; 
+    text-align: left;
+    margin-top: 1rem;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+th, td{
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+th {
+    background-color: yellow;
+}
+
+
