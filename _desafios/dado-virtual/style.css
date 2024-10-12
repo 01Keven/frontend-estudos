@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: baseline;
+    flex-direction: column;
+}
+
+h1 {
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.dado-container {
+    margin-top: 3rem;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border: solid 2px rgb(30, 30, 30);
+    border-radius: 1rem;
+    position: relative;
+}
+
+#inicio {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    /* display: none; */
+
+}
+
+#textinicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 10rem;
+    font-weight: bold;
+    top: 50%;
+    margin-left: 6rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+.btt-container {
+    margin-top: 2rem;
+}
+
+#buttrodando{
+    padding: 0.5rem;
+    width: 8rem;
+    border-radius: 1rem;
+}
+
+
+/* Dado Face 1 */
+#dadoum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+
+#ponto1 {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Dado Face 2 */
+#dadodois {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+
+#ponto2, #ponto3 {
+    position: absolute;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+/* Ponto no canto superior esquerdo */
+#ponto2 {
+    top: 10px;
+    left: 10px;
+}
+
+/* Ponto no canto inferior direito */
+#ponto3 {
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Dado Face 3 */
+#dadotres {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+
+#ponto4, #ponto5, #ponto6 {
+    position: absolute;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+/* Ponto no canto superior esquerdo */
+#ponto4 {
+    top: 10px;
+    left: 10px;
+}
+
+/* Ponto no centro */
+#ponto5 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Ponto no canto inferior direito */
+#ponto6 {
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Dado Face 4 */
+#dadoquatro {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+
+#ponto7, #ponto8, #ponto9, #ponto10 {
+    position: absolute;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+/* Ponto no canto superior esquerdo */
+#ponto7 {
+    top: 10px;
+    left: 10px;
+}
+
+/* Ponto no canto superior direito */
+#ponto8 {
+    top: 10px;
+    right: 10px;
+}
+
+/* Ponto no canto inferior esquerdo */
+#ponto9 {
+    bottom: 10px;
+    left: 10px;
+}
+
+/* Ponto no canto inferior direito */
+#ponto10 {
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Dado Face 5 */
+#dadocinco {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+
+}
+
+#ponto11, #ponto12, #ponto13, #ponto14, #ponto15 {
+    position: absolute;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+/* Ponto no canto superior esquerdo */
+#ponto11 {
+    top: 10px;
+    left: 10px;
+}
+
+/* Ponto no canto superior direito */
+#ponto12 {
+    top: 10px;
+    right: 10px;
+}
+
+/* Ponto no centro */
+#ponto13 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Ponto no canto inferior esquerdo */
+#ponto14 {
+    bottom: 10px;
+    left: 10px;
+}
+
+/* Ponto no canto inferior direito */
+#ponto15 {
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Dado Face 6 */
+#dadoseis {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+
+#ponto16, #ponto17, #ponto18, #ponto19, #ponto20, #ponto21 {
+    position: absolute;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+/* Ponto no canto superior esquerdo */
+#ponto16 {
+    top: 10px;
+    left: 10px;
+}
+
+/* Ponto no canto superior direito */
+#ponto17 {
+    top: 10px;
+    right: 10px;
+}
+
+/* Ponto no meio esquerdo */
+#ponto18 {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+/* Ponto no meio direito */
+#ponto19 {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* Ponto no canto inferior esquerdo */
+#ponto20 {
+    bottom: 10px;
+    left: 10px;
+}
+
+/* Ponto no canto inferior direito */
+#ponto21 {
+    bottom: 10px;
+    right: 10px;
+}
