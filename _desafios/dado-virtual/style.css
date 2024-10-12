@@ -18,8 +18,42 @@ h1 {
     font-size: 3rem;
 }
 
+@keyframes dado-animacao {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        transform: scale(1.2) rotate(15deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(-15deg);
+    }
+    75% {
+        transform: scale(1.2) rotate(10deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.resultado-container{
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.resultado {
+    position: absolute;
+    color: bisque;
+}
+
 .dado-container {
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: flex;
     width: 200px;
     height: 200px;
@@ -27,6 +61,13 @@ h1 {
     border-radius: 1rem;
     position: relative;
 }
+
+.dado-container.rodando {
+    animation: dado-animacao 2s ease-in-out;
+    pointer-events: none;
+}
+
+
 
 #inicio {
     display: flex;
@@ -55,12 +96,26 @@ h1 {
     margin-top: 2rem;
 }
 
-#buttrodando{
-    padding: 0.5rem;
-    width: 8rem;
-    border-radius: 1rem;
+.btt-container.hidden {
+    display: none;
 }
 
+#buttrodando{
+    padding: 0.8rem;
+    width: 8rem;
+    border-radius: 1rem;
+    background-color: blue;
+    border: none;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#buttrodando:hover {
+    background-color: rgb(46, 46, 255);
+    scale: 110%;
+}
 
 /* Dado Face 1 */
 #dadoum {
