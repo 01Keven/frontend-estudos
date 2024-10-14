@@ -1,0 +1,17 @@
+{"Perguntas":[
+    {"id":1, 
+    "titulo":"Qual é o nome do criador do universo de Ordem Paranormal?", 
+    "altA":"Jotapê Oliveira", 
+    "altB": "Cellbit", 
+    "altC": "Felipe Neto", 
+    "altD": "Kian", 
+    "altCerto" : "altB"},
+
+    {"id":2, 
+    "titulo":"Qual personagem da primeira temporada era interpretado por Luba?", 
+    "altA":"Daniel Hartmann", 
+    "altB": "Alexsander Kothe", 
+    "altC": "Thiago Fritz", 
+    "altD": "Kaiser", 
+    "altCerto" : "altA"}
+]}
