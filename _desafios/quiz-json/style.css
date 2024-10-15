@@ -160,16 +160,24 @@ input[type=range]::-moz-range-thumb {
 #grafico-container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    text-align: center;
     align-items: center;
     padding: 8rem;
     gap: 1rem;
 }
+
+#respostasfinais {
+    padding: 1.5rem;
+}
+
 h2 {
     font-size: 30px;
 }
 
-
+h3 {
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
 
 #bttresponder {
     padding: 1rem;

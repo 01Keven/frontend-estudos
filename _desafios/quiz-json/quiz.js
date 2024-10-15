@@ -12,6 +12,8 @@ let respostasFinais = document.getElementById('respostasfinais')
 let grafico =  document.getElementById("grafico-container")
 let respostasCertas = document.getElementById('respostascertas')
 
+
+
 // recuperando respostas no navegador caso elas existam
 let respostaFinal = JSON.parse(localStorage.getItem('respostas')) || []
 
@@ -57,13 +59,6 @@ fetch("/_desafios/quiz-json/respostas.json")
                 }
             })
 
-            // if (opcaoEscolhida === respostaCorreta) {
-            //     alert("acertou")
-                
-            // } else {
-            //     alert('erou')
-            // }
-
             posicaoPergunta ++
             if (posicaoPergunta < perguntas.length) {
                 setTimeout(() => {
@@ -78,14 +73,21 @@ fetch("/_desafios/quiz-json/respostas.json")
                     quizContainer.classList.remove('sumindo');
                 }, 2000) // dando 2 segundo de tempo para usuario visualizar as respostas
             } else {
-                // alert("fim, as respostas: " + JSON.stringify(respostaFinal))
-                // removendo respostas no final, para resetar as escolhas do quiz
                 grafico.style.display = 'block'
                 localStorage.removeItem('respostas')
                 quizContainer.classList.add('escondido');
-                respostasFinais.innerHTML = JSON.stringify(respostaFinal)
+                numQuestao.style.display = 'none'
 
-                respostaFinal.innerHTML = respostaCorreta
+
+                respostasFinais.innerHTML = respostaFinal.map((resposta, index) =>
+                    `<span>Questão ${index + 1}: ${resposta} | <span/>`
+                ).join("")
+
+                respostasCertas.innerHTML = perguntas.map((pergunta, index) =>
+                    `<span>Questão ${index + 1}: ${pergunta.altCerto} | <span/>`
+                ).join("")
+
+                
                 
             }
         })
