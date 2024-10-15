@@ -5,7 +5,7 @@
     "altB": "Cellbit", 
     "altC": "Felipe Neto", 
     "altD": "Kian", 
-    "altCerto" : "altB"},
+    "altCerto" : "Cellbit"},
 
     {"id":2, 
     "titulo":"Qual personagem da primeira temporada era interpretado por Luba?", 
@@ -13,5 +13,29 @@
     "altB": "Alexsander Kothe", 
     "altC": "Thiago Fritz", 
     "altD": "Kaiser", 
-    "altCerto" : "altA"}
+    "altCerto" : "Daniel Hartmann"},
+    
+    {"id":3, 
+    "titulo":"Qual é o nome do grupo que atua combatendo o paranormal no RPG?", 
+    "altA":"Os Marcados", 
+    "altB": "Os Escolhidos", 
+    "altC": "A Ordem", 
+    "altD": "Os Ocultistas", 
+    "altCerto" : "A Ordem"},
+    
+    {"id":4, 
+    "titulo":"Qual a criatura icônica, marcada pelo seu nome é visto em OSF?", 
+    "altA":"O Succ", 
+    "altB": "A Marionete", 
+    "altC": "O Anfitrião", 
+    "altD": "A Morcegosa", 
+    "altCerto" : "O Succ"},
+    
+    {"id":5, 
+    "titulo":"Qual o verdadeiro nome do Angel of the Night?", 
+    "altA":"Alex", 
+    "altB": "Kaiser", 
+    "altC": "César", 
+    "altD": "Thiago", 
+    "altCerto" : "César"}
 ]}

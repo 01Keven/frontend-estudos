@@ -11,6 +11,30 @@ body {
     align-items: center;
     background-color: rgb(22, 21, 21);
     color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@keyframes quiz-animacao {
+    0% {
+        opacity: 100%;
+        /* transform: scale(1) */
+    }
+    90% {
+        opacity: 10%;
+        /* transform: scale(0.8)  */
+    }
+    100% {
+        opacity: 100%;
+        /* transform: scale(1)  */
+    }
+}
+
+#quizcontainer.sumindo {
+    animation: quiz-animacao 2s ease-in-out;
+}
+
+#quizcontainer.escondido {
+    display: none;
 }
 
 .instrucao-container {
@@ -36,6 +60,7 @@ p {
     align-items: center;
     border: solid 1px white;
     margin-top: 1.5rem;
+    /* display: none; */
     
 }
 
@@ -74,11 +99,9 @@ p {
     color: black;
 }
 
-#opcoes {
-    /* padding: 1rem; */
-    justify-content: space-around;
-    /* background-color: aqua; */
-}
+/* #opcoes {
+    
+} */
 
 .opcao {
     border: solid 1px white;
@@ -90,9 +113,69 @@ p {
     cursor: pointer;
 }
 
+.opcao:hover {
+    background-color: rgb(23, 23, 23);
+    box-shadow: 1px 1px 190px 0px rgba(255, 255, 255, 0.596);
+    color: white;
+}
+
+/* Estilizando a trilha */
+input[type=range] {
+    -webkit-appearance: none;
+    width: 300px;
+    height: 8px;
+    background: linear-gradient(90deg, #fff6a5, #fffb00);
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    pointer-events: none;
+}
+
+input[type=range]:hover {
+    opacity: 1;
+}
+
+/* Estilizando o thumb (bolinha) */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffea00;
+    cursor: default; /* Cursor não interativo */
+    pointer-events: none; /* Desativa interações com o thumb */
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffea00;
+    cursor: default; /* Cursor não interativo */
+    pointer-events: none; /* Desativa interações com o thumb */
+}
+
+#grafico-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem;
+    gap: 1rem;
+}
+h2 {
+    font-size: 30px;
+}
+
+
+
 #bttresponder {
     padding: 1rem;
     margin-top: 1rem;
+    display: none;
+    cursor: pointer;
 }
 
 .num-questao {
@@ -102,7 +185,11 @@ p {
     align-items: center;
 }
 
+
+
 footer {
     display: flex;
-    margin-top: 1.5rem;
+    position: fixed;
+    bottom: 4%;
+    /* margin-top: 1.5rem; */
 }
