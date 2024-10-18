@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrosel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+#carrosel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 90%;
+}
+
+#carrosel img {
+    width: 100px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    padding: 10px;
+}
+
+button:disabled {
+   cursor: not-allowed;
+   color: #ccc;
+}
+
+
+
