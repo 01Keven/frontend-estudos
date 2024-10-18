@@ -10,7 +10,7 @@
     <header class="titulo">Cadastro de Clientes</header>
 
     <main class="content-container">
-        <button id="btncadastrar">Cadastrar</button>
+        <button id="btnmcadastrar">Cadastrar</button>
         <span> 
             <input type="search" placeholder="Filtro"> 
         </span>
@@ -33,7 +33,31 @@
             </tr>
         </table>
 
-        
+        <div class="cadastrar-container">
+            <div class="cadastrar">
+                <h3>Cadastrar Usuários</h3>
+                <div class="inputs-usuarios">
+
+                    <label for="nome" id="label">Nome
+                        <input type="text" name="nome" id="nome">
+                    </label>
+
+                    <label for="email" id="label">Endereço
+                        <input type="text" name="email" id="email">
+                    </label>
+
+                    <label for="endereco" id="label">Email
+                        <input type="text" name="email" id="email">
+                    </label>
+                    
+                    <label for="endereco" id="label">Data de Nascimento
+                        <input type="date" name="data" id="data">
+                    </label>
+                    <br>
+                    <button type="submit" id="btncadastrar">Cadastrar</button>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 <script src="/_desafios/crud/crud.js"></script>
