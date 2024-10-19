@@ -12,7 +12,7 @@
     <main class="content-container">
         <button id="btnmcadastrar">Cadastrar</button>
         <span> 
-            <input type="search" placeholder="Filtro"> 
+            <input type="search" placeholder="Filtro" id="filtro"> 
         </span>
         <span>
         <button id="btnfiltrar">Filtrar</button>
@@ -35,23 +35,24 @@
 
         <div class="cadastrar-container">
             <div class="cadastrar">
+                <button id="btnfechar">X</button>
                 <h3>Cadastrar Usuários</h3>
                 <div class="inputs-usuarios">
 
                     <label for="nome" id="label">Nome
-                        <input type="text" name="nome" id="nome">
+                        <input type="text" name="nome" id="nome" required>
                     </label>
 
                     <label for="email" id="label">Endereço
-                        <input type="text" name="email" id="email">
+                        <input type="text" name="email" id="email" required>
                     </label>
 
                     <label for="endereco" id="label">Email
-                        <input type="text" name="email" id="email">
+                        <input type="text" name="email" id="email" required>
                     </label>
                     
                     <label for="endereco" id="label">Data de Nascimento
-                        <input type="date" name="data" id="data">
+                        <input type="date" name="data" id="data" required>
                     </label>
                     <br>
                     <button type="submit" id="btncadastrar">Cadastrar</button>

@@ -13,6 +13,10 @@ body {
     /* gap: 1rem; */
 }
 
+.content-container {
+
+}
+
 .titulo {
     background-color: rgb(27, 27, 27);
     color: white;
@@ -85,9 +89,26 @@ input {
 
 }
 
+input#filtro {
+    width: 300px;
+}
+
 #btncadastrar {
     padding: 1rem;
     cursor: pointer;
+}
+
+#btnfechar {
+    display: flex;
+    position: fixed;
+    right: 4%;
+    top: 4%;
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    
 }
 
 h3 {
