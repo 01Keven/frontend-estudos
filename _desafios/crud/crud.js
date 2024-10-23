@@ -179,6 +179,27 @@ function deleteUsers(id) {
     }
 }
 
+function filterUsers() {
+    let btnFiltrar = document.getElementById('btnfiltrar')
+    let filtro = document.getElementById('filtro')
+
+    btnFiltrar.addEventListener('click', () => {
+        const users = getUsers()
+        // obtendo o id ditigado no campo input
+        const userId = parseInt(filtro.value) 
+
+        const user = users.find(user => user.id === userId)
+
+        if (user) {
+            alert(`ID: ${user.id}\nNome: ${user.nome}\nEmail: ${user.email}\nEndereço: ${user.endereco}\nNascimento: ${user.nascimento}`);
+        } else {
+            alert('Não encontrado!')
+        }
+    })
+}
+
+filterUsers()
+
 window.onload = function() {
     displayUsers()
 }
