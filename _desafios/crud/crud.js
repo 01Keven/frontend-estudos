@@ -173,7 +173,9 @@ function deleteUsers(id) {
 
     if (confimacao) {
         let users = getUsers()
+        // filtra e mantem apenas os usuarios cujo id é diferente do que sera excluido
         users = users.filter(user => user.id !== id)
+        
         saveUsers(users)
         displayUsers()
     }
