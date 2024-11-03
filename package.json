@@ -1,0 +1,12 @@
+{
+  "name": "calculadora-imc",
+  "version": "1.0.0",
+  "main": "./Classes e Objetos/imc/imc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}

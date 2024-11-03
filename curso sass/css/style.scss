@@ -1,0 +1,50 @@
+@import "./header";
+@import "./main";
+
+$colorBg: blue;
+
+header {
+    height: 150px;
+    margin-top: 1rem;
+}
+
+main {
+    height: 150px;
+    margin-top: 1rem;
+
+}
+
+footer {
+    height: 150px;
+    background-color: $colorBg;
+    margin-top: 1rem;
+
+}
+
+.principal {
+    div {
+        background-color: $colorBg;
+        p {
+            font-size: 18px;
+            color: red;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+$black: black;
+
+.button {
+    font-size: 20px;
+    color: white;
+    padding: 1rem;
+    border-radius: 80px;
+    &--black {
+        @extend .button;
+        background-color: $black;
+    }
+}
+

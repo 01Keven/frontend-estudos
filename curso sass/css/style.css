@@ -1,0 +1,44 @@
+header {
+  background-color: yellow;
+}
+
+main {
+  background-color: green;
+}
+
+header {
+  height: 150px;
+  margin-top: 1rem;
+}
+
+main {
+  height: 150px;
+  margin-top: 1rem;
+}
+
+footer {
+  height: 150px;
+  background-color: blue;
+  margin-top: 1rem;
+}
+
+.principal div {
+  background-color: blue;
+}
+.principal div p {
+  font-size: 18px;
+  color: red;
+}
+.principal div p:hover {
+  color: white;
+}
+
+.button, .button--black {
+  font-size: 20px;
+  color: white;
+  padding: 1rem;
+  border-radius: 80px;
+}
+.button--black {
+  background-color: black;
+}/*# sourceMappingURL=style.css.map */
